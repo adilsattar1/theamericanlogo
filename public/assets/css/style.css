@@ -899,11 +899,15 @@ header.showmenu {
 
 
 
-@media screen and (min-color-index: 0) and (-webkit-min-device-pixel-ratio: 0) {
-  .get-a-quote-pg .free-consult .form select {
-    color: #a7a7a7;
-    background: #f3f5fe;
-    -webkit-appearance: none;
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) {
+  @media {
+    .get-a-quote-pg .free-consult .form select {
+
+      color: #a7a7a7;
+      background: #f3f5fe;
+      -webkit-appearance: none;
+
+    }
   }
 }
 
@@ -1297,6 +1301,7 @@ section.packagewrp [class^="col-md-4"]>div.pkgbox ul li:before {
   top: 5px;
   position: absolute;
   left: 0;
+  content: \f00c;
   color: #F95F57;
   font-size: 12px;
   top: 5px;
@@ -1703,6 +1708,7 @@ a.chatcta {
   display: inline-block;
 }
 
+.comboopack .combopackwrap .pricingwrpr {}
 
 .comboopack .combopackwrap .pricingwrpr h4 {
   color: #F95F57;
@@ -1732,8 +1738,9 @@ a.chatcta {
 }
 
 .comboopack .combopackwrap .detailwrp a.btn-1 {
-  background: #F95F57;
+  background: #F95F5;
   color: #ffffff;
+  7;
   font-size: 16px;
   border: none;
   display: inline-flex;
@@ -1746,6 +1753,7 @@ a.chatcta {
   clip-path: polygon(19% 0%, 100% 0%, 100% 100%, 19% 100%, 0% 50%);
 }
 
+.comboopack .combopackwrap .package-off h4 {}
 
 .comboopack .combopackwrap .package-off span {
   font-family: 'Cairo', sans-serif !important;
@@ -2945,7 +2953,6 @@ section.privacy i.fa.fa-envelope-o {
 }
 
 .dropdown-content {
-  display: none;
   position: absolute;
   min-width: 210px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -2953,6 +2960,12 @@ section.privacy i.fa.fa-envelope-o {
   left: -20px;
   top: 40px;
   border-radius: 10px;
+  opacity: 0;
+  visibility: hidden;
+  background: rgb(0 0 0 / 94%);
+  background-color: rgb(0 0 0 / 83%);
+  backdrop-filter: blur(15px);
+  transition: all ease .3s;
 }
 
 .dropdown-content a {
@@ -2975,10 +2988,8 @@ section.privacy i.fa.fa-envelope-o {
 
 .dropdown:hover .dropdown-content {
   display: block;
-  background: rgb(0 0 0 / 94%);
-  background-color: rgb(0 0 0 / 83%);
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(15px);
+  opacity: 1;
+  visibility: visible;
 }
 
 
