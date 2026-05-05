@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ClientLogos from "../components/ClientLogos";
+import HomePortfolioSlider from "../components/HomePortfolioSlider";
 import PackageInclude from "../components/PackageInclude";
 import Cta from "../components/Cta";
 import Testimonials from "../components/Testimonials";
@@ -9,6 +10,69 @@ export const metadata = {
   title: "Home Page",
   description: "The American Logo",
 };
+
+const featureCards = [
+  {
+    title: "2d & 3D Illustration",
+    description: "The American Logo's exceptional 2D and 3D illustrations redefine the art of visual storytelling. We combine technical precision with artistic innovation to create stunning visuals that are tailored to your brand. Our unique illustrations add depth, creativity, and visual impact to your digital footprint. Whether it's for advertising, branding, or digital content, our illustrations always leave a lasting impact on your audience.",
+    href: "/2d-&-3d-illustration",
+    imgSrc: "/assets/images/01.png",
+    imgAlt: "2d and 3d illustration",
+    svg1: { style: "drop-shadow(4px 5px 4px rgba(255,167,5,0.3))", fill: "#E8606C" },
+    svg2: { style: "drop-shadow(4px 5px 4px rgba(255,86,0,0.3))", fill: "#F28369" },
+  },
+  {
+    title: "Website Development",
+    description: "The American Logo's skilled development team employs cutting-edge technologies to create websites that not only look great but also provide a seamless user experience. We go above and beyond standard templates, customising each website to reflect the uniqueness of your brand. Our websites stand out in the digital landscape thanks to a focus on responsive design, intuitive navigation, and optimised performance.",
+    href: "/website-development",
+    imgSrc: "/assets/images/02.png",
+    imgAlt: "website development",
+    svg1: { style: "drop-shadow(4px 5px 4px rgba(65,193,123,0.3))", fill: "#F28369" },
+    svg2: { style: "drop-shadow(4px 5px 4px rgba(0,153,69,0.3))", fill: "#E8606C" },
+  },
+  {
+    title: "Logo Design",
+    description: "At The American Logo, we understand that a logo is the visual emblem of your company's identity. Our distinct approach entails a meticulous process of understanding your brand's story, values, and target audience. We then translate these insights into visually appealing logos that leave a definitive impression. We believe in the power of simplicity and timeless design to ensure that your logo is timeless.",
+    href: "/logo-design",
+    imgSrc: "/assets/images/03.png",
+    imgAlt: "logo design",
+    svg1: { style: "drop-shadow(4px 5px 4px rgba(86,189,253,0.3))", fill: "#F28369" },
+    svg2: { style: "drop-shadow(4px 5px 4px rgba(58,68,237,0.3))", fill: "#E8606C" },
+  },
+];
+
+const serviceCards = [
+  {
+    title: "Motion Graphics",
+    description: "From contemporary graphics to dynamic social media content, our team of talented animators and designers harnesses the latest techniques to deliver visually stunning and memorable motion graphics. We combine the power of animation, design, and creativity to bring your ideas to life with captivating motion. The American Logo's exceptional motion graphics will capture your audience and help you stand out from the competition.",
+    href: "/motion-graphics",
+    imgSrc: "/assets/images/04.png",
+    imgAlt: "motion graphics",
+    iconWrapperModifier: "",
+    svg1: { style: "drop-shadow(4px 5px 4px rgba(255,167,5,0.3))", fill: "#E8606C" },
+    svg2: { style: "drop-shadow(4px 5px 4px rgba(255,86,0,0.3))", fill: "#F28369" },
+  },
+  {
+    title: "SEO",
+    description: "SEO service is not just about rankings and traffic. We strive to deliver measurable business outcomes. Through thorough analysis and optimization, we aim to enhance user experience, increase conversions, and ultimately help your brand achieve its goals. Our commitment to staying ahead of the ever-evolving search engine algorithms sets us apart from the competition. Experience our unique SEO solutions in driving sustainable growth and establishing your brand as a leader in the digital realm.",
+    href: "/search-engine-optimization",
+    imgSrc: "/assets/images/05.png",
+    imgAlt: "SEO",
+    iconWrapperModifier: "sm",
+    svg1: { style: "drop-shadow(4px 5px 4px rgba(86,189,253,0.3))", fill: "#F28369" },
+    svg2: { style: "drop-shadow(4px 5px 4px rgba(58,68,237,0.3))", fill: "#E8606C" },
+  },
+  {
+    title: "Social Media Marketing",
+    description: "Our social media marketing (SMM) service is the key to unlocking your brand's online potential. Our team of experts will identify the right platforms, target the most relevant audience, and create engaging content that resonates with your followers. Our goal is to actively manage your social media presence, fostering genuine connections with your audience through meaningful interactions and timely responses. Through captivating visuals, compelling storytelling, and interactive experiences, we will help your brand stand out in the crowded social media landscape.",
+    href: "/social-media-marketing",
+    imgSrc: "/assets/images/06.png",
+    imgAlt: "social media marketing",
+    iconWrapperModifier: "",
+    svg1: { style: "drop-shadow(4px 5px 4px rgba(86,189,253,0.3))", fill: "#F28369" },
+    svg2: { style: "drop-shadow(4px 5px 4px rgba(58,68,237,0.3))", fill: "#E8606C" },
+  },
+];
 
 export default function Page() {
   return (
@@ -82,91 +146,30 @@ export default function Page() {
               </div>
             </div>
             <div className="row">
-              <div className="col-sm-4 animate bounceIn" data-wow-delay="0.5s">
-                <div className="bx">
-                  <div className="icon-wrapper">
-                    <div className="circle">
-                      <svg style={{filter: 'drop-shadow(4px 5px 4px rgba(255,167,5,0.3))', fill: '#E8606C'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 177.4 197.4">
-                        <path d="M0,58.4v79.9c0,6.5,3.5,12.6,9.2,15.8l70.5,40.2c5.6,3.2,12.4,3.2,18,0l70.5-40.2c5.7-3.2,9.2-9.3,9.2-15.8V58.4 c0-6.5-3.5-12.6-9.2-15.8L97.7,2.4c-5.6-3.2-12.4-3.2-18,0L9.2,42.5C3.5,45.8,0,51.8,0,58.4z">
-                        </path>
-                      </svg>
+              {featureCards.map((card) => (
+                <div className="col-sm-4 animate bounceIn" data-wow-delay="0.5s" key={card.title}>
+                  <div className="bx">
+                    <div className="icon-wrapper">
+                      <div className="circle">
+                        <svg style={{ filter: card.svg1.style, fill: card.svg1.fill }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 177.4 197.4">
+                          <path d="M0,58.4v79.9c0,6.5,3.5,12.6,9.2,15.8l70.5,40.2c5.6,3.2,12.4,3.2,18,0l70.5-40.2c5.7-3.2,9.2-9.3,9.2-15.8V58.4 c0-6.5-3.5-12.6-9.2-15.8L97.7,2.4c-5.6,3.2-12.4,3.2-18,0L9.2,42.5C3.5,45.8,0,51.8,0,58.4z" />
+                        </svg>
+                      </div>
+                      <div className="circle">
+                        <svg style={{ filter: card.svg2.style, fill: card.svg2.fill }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 177.4 197.4">
+                          <path d="M0,58.4v79.9c0,6.5,3.5,12.6,9.2,15.8l70.5,40.2c5.6,3.2,12.4,3.2,18,0l70.5-40.2c5.7-3.2,9.2-9.3,9.2-15.8V58.4 c0-6.5-3.5-12.6-9.2-15.8L97.7,2.4c-5.6,3.2-12.4,3.2-18,0L9.2,42.5C3.5,45.8,0,51.8,0,58.4z" />
+                        </svg>
+                      </div>
+                      <figure>
+                        <img src={card.imgSrc} alt={card.imgAlt} />
+                      </figure>
                     </div>
-                    <div className="circle">
-                      <svg style={{filter: 'drop-shadow(4px 5px 4px rgba(255,86,0,0.3))', fill: '#F28369'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 177.4 197.4">
-                        <path d="M0,58.4v79.9c0,6.5,3.5,12.6,9.2,15.8l70.5,40.2c5.6,3.2,12.4,3.2,18,0l70.5-40.2c5.7-3.2,9.2-9.3,9.2-15.8V58.4 c0-6.5-3.5-12.6-9.2-15.8L97.7,2.4c-5.6-3.2-12.4-3.2-18,0L9.2,42.5C3.5,45.8,0,51.8,0,58.4z">
-                        </path>
-                      </svg>
-                    </div>
-                    <figure>
-                      <img src="/assets/images/01.png" />
-                    </figure>
+                    <h4>{card.title}</h4>
+                    <p className="list-scroll">{card.description}</p>
+                    <Link href={card.href}>DISCOVER More</Link>
                   </div>
-                  <h4>2d &amp; 3D Illustration</h4>
-                  <p className="list-scroll">The American Logo's exceptional 2D and 3D illustrations redefine the art
-                    of visual storytelling. We combine technical precision with artistic innovation to create
-                    stunning visuals that are tailored to your brand. Our unique illustrations add depth,
-                    creativity, and visual impact to your digital footprint. Whether it's for advertising,
-                    branding, or digital content, our illustrations always leave a lasting impact on your
-                    audience.</p>
-                  <Link href="/2d-&-3d-illustration">DISCOVER More</Link>
                 </div>
-              </div>
-              <div className="col-sm-4 animate bounceIn" data-wow-delay="0.5s">
-                <div className="bx">
-                  <div className="icon-wrapper">
-                    <div className="circle">
-                      <svg style={{filter: 'drop-shadow(4px 5px 4px rgba(65,193,123,0.3))', fill: '#F28369'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 177.4 197.4">
-                        <path d="M0,58.4v79.9c0,6.5,3.5,12.6,9.2,15.8l70.5,40.2c5.6,3.2,12.4,3.2,18,0l70.5-40.2c5.7-3.2,9.2-9.3,9.2-15.8V58.4 c0-6.5-3.5-12.6-9.2-15.8L97.7,2.4c-5.6-3.2-12.4-3.2-18,0L9.2,42.5C3.5,45.8,0,51.8,0,58.4z">
-                        </path>
-                      </svg>
-                    </div>
-                    <div className="circle">
-                      <svg style={{filter: 'drop-shadow(4px 5px 4px rgba(0,153,69,0.3))', fill: '#E8606C'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 177.4 197.4">
-                        <path d="M0,58.4v79.9c0,6.5,3.5,12.6,9.2,15.8l70.5,40.2c5.6,3.2,12.4,3.2,18,0l70.5-40.2c5.7-3.2,9.2-9.3,9.2-15.8V58.4 c0-6.5-3.5-12.6-9.2-15.8L97.7,2.4c-5.6-3.2-12.4-3.2-18,0L9.2,42.5C3.5,45.8,0,51.8,0,58.4z">
-                        </path>
-                      </svg>
-                    </div>
-                    <figure>
-                      <img src="/assets/images/02.png" />
-                    </figure>
-                  </div>
-                  <h4>Website Development</h4>
-                  <p className="list-scroll">The American Logo's skilled development team employs cutting-edge
-                    technologies to create websites that not only look great but also provide a seamless user
-                    experience. We go above and beyond standard templates, customising each website to reflect
-                    the uniqueness of your brand. Our websites stand out in the digital landscape thanks to a
-                    focus on responsive design, intuitive navigation, and optimised performance.</p>
-                  <Link href="/website-development">DISCOVER More</Link>
-                </div>
-              </div>
-              <div className="col-sm-4 animate bounceIn" data-wow-delay="0.5s">
-                <div className="bx">
-                  <div className="icon-wrapper">
-                    <div className="circle">
-                      <svg style={{filter: 'drop-shadow(4px 5px 4px rgba(86,189,253,0.3))', fill: '#F28369'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 177.4 197.4">
-                        <path d="M0,58.4v79.9c0,6.5,3.5,12.6,9.2,15.8l70.5,40.2c5.6,3.2,12.4,3.2,18,0l70.5-40.2c5.7-3.2,9.2-9.3,9.2-15.8V58.4 c0-6.5-3.5-12.6-9.2-15.8L97.7,2.4c-5.6-3.2-12.4-3.2-18,0L9.2,42.5C3.5,45.8,0,51.8,0,58.4z">
-                        </path>
-                      </svg>
-                    </div>
-                    <div className="circle">
-                      <svg style={{filter: 'drop-shadow(4px 5px 4px rgba(58,68,237,0.3))', fill: '#E8606C'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 177.4 197.4">
-                        <path d="M0,58.4v79.9c0,6.5,3.5,12.6,9.2,15.8l70.5,40.2c5.6,3.2,12.4,3.2,18,0l70.5-40.2c5.7-3.2,9.2-9.3,9.2-15.8V58.4 c0-6.5-3.5-12.6-9.2-15.8L97.7,2.4c-5.6-3.2-12.4-3.2-18,0L9.2,42.5C3.5,45.8,0,51.8,0,58.4z">
-                        </path>
-                      </svg>
-                    </div>
-                    <figure>
-                      <img src="/assets/images/03.png" />
-                    </figure>
-                  </div>
-                  <h4>Logo Design</h4>
-                  <p className="list-scroll">At The American Logo, we understand that a logo is the visual emblem of
-                    your company's identity. Our distinct approach entails a meticulous process of understanding
-                    your brand's story, values, and target audience. We then translate these insights into
-                    visually appealing logos that leave a definitive impression. We believe in the power of
-                    simplicity and timeless design to ensure that your logo is timeless.</p>
-                  <Link href="/logo-design">DISCOVER More</Link>
-                </div>
-              </div>
+              ))}
               <div className="col-sm-4 animate bounceIn" data-wow-delay="0.5s">
                 <div className="bx">
                   <div className="icon-wrapper">
@@ -196,181 +199,34 @@ export default function Page() {
                   <Link href="/motion-graphics">DISCOVER More</Link>
                 </div>
               </div>
-              <div className="col-sm-4 animate bounceIn" data-wow-delay="0.5s">
-                <div className="bx">
-                  <div className="icon-wrapper sm">
-                    <div className="circle">
-                      <svg style={{filter: 'drop-shadow(4px 5px 4px rgba(65,193,123,0.3))', fill: '#F28369'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 177.4 197.4">
-                        <path d="M0,58.4v79.9c0,6.5,3.5,12.6,9.2,15.8l70.5,40.2c5.6,3.2,12.4,3.2,18,0l70.5-40.2c5.7-3.2,9.2-9.3,9.2-15.8V58.4 c0-6.5-3.5-12.6-9.2-15.8L97.7,2.4c-5.6-3.2-12.4-3.2-18,0L9.2,42.5C3.5,45.8,0,51.8,0,58.4z">
-                        </path>
-                      </svg>
+              {serviceCards.map((card) => (
+                <div className="col-sm-4 animate bounceIn" data-wow-delay="0.5s" key={card.title}>
+                  <div className="bx">
+                    <div className={`icon-wrapper${card.iconWrapperModifier ? ` ${card.iconWrapperModifier}` : ""}`}>
+                      <div className="circle">
+                        <svg style={{ filter: card.svg1.style, fill: card.svg1.fill }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 177.4 197.4">
+                          <path d="M0,58.4v79.9c0,6.5,3.5,12.6,9.2,15.8l70.5,40.2c5.6,3.2,12.4,3.2,18,0l70.5-40.2c5.7-3.2,9.2-9.3,9.2-15.8V58.4 c0-6.5-3.5-12.6-9.2-15.8L97.7,2.4c-5.6,3.2-12.4,3.2-18,0L9.2,42.5C3.5,45.8,0,51.8,0,58.4z" />
+                        </svg>
+                      </div>
+                      <div className="circle">
+                        <svg style={{ filter: card.svg2.style, fill: card.svg2.fill }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 177.4 197.4">
+                          <path d="M0,58.4v79.9c0,6.5,3.5,12.6,9.2,15.8l70.5,40.2c5.6,3.2,12.4,3.2,18,0l70.5-40.2c5.7-3.2,9.2-9.3,9.2-15.8V58.4 c0-6.5-3.5-12.6-9.2-15.8L97.7,2.4c-5.6,3.2-12.4,3.2-18,0L9.2,42.5C3.5,45.8,0,51.8,0,58.4z" />
+                        </svg>
+                      </div>
+                      <figure>
+                        <img src={card.imgSrc} alt={card.imgAlt} />
+                      </figure>
                     </div>
-                    <div className="circle">
-                      <svg style={{filter: 'drop-shadow(4px 5px 4px rgba(0,153,69,0.3))', fill: '#E8606C'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 177.4 197.4">
-                        <path d="M0,58.4v79.9c0,6.5,3.5,12.6,9.2,15.8l70.5,40.2c5.6,3.2,12.4,3.2,18,0l70.5-40.2c5.7-3.2,9.2-9.3,9.2-15.8V58.4 c0-6.5-3.5-12.6-9.2-15.8L97.7,2.4c-5.6-3.2-12.4-3.2-18,0L9.2,42.5C3.5,45.8,0,51.8,0,58.4z">
-                        </path>
-                      </svg>
-                    </div>
-                    <figure>
-                      <img src="/assets/images/05.png" alt="brand-development" />
-                    </figure>
+                    <h4>{card.title}</h4>
+                    <p className="list-scroll">{card.description}</p>
+                    <Link href={card.href}>DISCOVER More</Link>
                   </div>
-                  <h4>SEO</h4>
-                  <p className="list-scroll">SEO service is not just about rankings and traffic. We strive to deliver
-                    measurable business outcomes. Through thorough analysis and optimization, we aim to enhance
-                    user experience, increase conversions, and ultimately help your brand achieve its goals. Our
-                    commitment to staying ahead of the ever-evolving search engine algorithms sets us apart from
-                    the competition. Experience our unique SEO solutions in driving sustainable growth and
-                    establishing your brand as a leader in the digital realm.</p>
-                  <Link href="/search-engine-optimization">DISCOVER More</Link>
                 </div>
-              </div>
-              <div className="col-sm-4 animate bounceIn" data-wow-delay="0.5s">
-                <div className="bx">
-                  <div className="icon-wrapper">
-                    <div className="circle">
-                      <svg style={{filter: 'drop-shadow(4px 5px 4px rgba(86,189,253,0.3))', fill: '#F28369'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 177.4 197.4">
-                        <path d="M0,58.4v79.9c0,6.5,3.5,12.6,9.2,15.8l70.5,40.2c5.6,3.2,12.4,3.2,18,0l70.5-40.2c5.7-3.2,9.2-9.3,9.2-15.8V58.4 c0-6.5-3.5-12.6-9.2-15.8L97.7,2.4c-5.6-3.2-12.4-3.2-18,0L9.2,42.5C3.5,45.8,0,51.8,0,58.4z">
-                        </path>
-                      </svg>
-                    </div>
-                    <div className="circle">
-                      <svg style={{filter: 'drop-shadow(4px 5px 4px rgba(58,68,237,0.3))', fill: '#E8606C'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 177.4 197.4">
-                        <path d="M0,58.4v79.9c0,6.5,3.5,12.6,9.2,15.8l70.5,40.2c5.6,3.2,12.4,3.2,18,0l70.5-40.2c5.7-3.2,9.2-9.3,9.2-15.8V58.4 c0-6.5-3.5-12.6-9.2-15.8L97.7,2.4c-5.6-3.2-12.4-3.2-18,0L9.2,42.5C3.5,45.8,0,51.8,0,58.4z">
-                        </path>
-                      </svg>
-                    </div>
-                    <figure>
-                      <img src="/assets/images/06.png" />
-                    </figure>
-                  </div>
-                  <h4>Social Media Marketing</h4>
-                  <p className="list-scroll">Our social media marketing (SMM) service is the key to unlocking your
-                    brand's online potential. Our team of experts will identify the right platforms, target the
-                    most relevant audience, and create engaging content that resonates with your followers. Our
-                    goal is to actively manage your social media presence, fostering genuine connections with
-                    your audience through meaningful interactions and timely responses. Through captivating
-                    visuals, compelling storytelling, and interactive experiences, we will help your brand stand
-                    out in the crowded social media landscape.</p>
-                  <Link href="/social-media-marketing">DISCOVER More</Link>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </section>
-        <section className="portfoliowrp">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-12">
-                <div className="txtwrp">
-                  <h4 className="upr-head">WEB DESIGN CONSULTANT
-                  </h4>
-                  <h2 className="main-heading">Solutions That Change The <span>World For The Better</span></h2>
-                  <p className="text-center main-pera">Design excellence can’t really be achieved without working side
-                    by side with extraordinary clients from around the world.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="container-fluid">
-            <div className="row">
-              <div className="col-md-12 p-0">
-                <div className="img-portion">
-                  <ul className="home-port-slider">
-                    <li>
-                      <a data-fancybox="port" href="/assets/images/portfolios/7.png">
-                        <figure>
-                          <img className="widftttt" src="/assets/images/portfolios/7.png" alt="" />
-                        </figure>
-                      </a>
-                    </li>
-                    <li>
-                      <a data-fancybox="port" href="/assets/images/portfolios/5.png">
-                        <figure>
-                          <img className="heigtttt" src="/assets/images/portfolios/5.png" alt="" />
-                        </figure>
-                      </a>
-                    </li>
-                    <li className="widdth sizzze">
-                      <a data-fancybox="port" href="/assets/images/portfolios/2.png">
-                        <figure>
-                          <img className="widftttt" src="/assets/images/portfolios/2.png" alt="" />
-                        </figure>
-                      </a>
-                    </li>
-                    <li className="">
-                      <a data-fancybox="port" href="/assets/images/portfolios/3.png">
-                        <figure>
-                          <img className="heigtttt" src="/assets/images/portfolios/3.png" alt="" />
-                        </figure>
-                      </a>
-                    </li>
-                    <li>
-                      <a data-fancybox="port" href="/assets/images/portfolios/4.png">
-                        <figure>
-                          <img className="widftttt" src="/assets/images/portfolios/4.png" alt="" />
-                        </figure>
-                      </a>
-                    </li>
-                    <li>
-                      <a data-fancybox="port" href="/assets/images/portfolios/5.png">
-                        <figure>
-                          <img className="heigtttt" src="/assets/images/portfolios/5.png" alt="" />
-                        </figure>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="img-portion">
-                  <ul dir="rtl" className="home-port-slider2">
-                    <li>
-                      <a data-fancybox="port" href="/assets/images/portfolios/1.png">
-                        <figure>
-                          <img className="widftttt" src="/assets/images/portfolios/1.png" alt="" />
-                        </figure>
-                      </a>
-                    </li>
-                    <li>
-                      <a data-fancybox="port" href="/assets/images/portfolios/5.png">
-                        <figure>
-                          <img className="heigtttt" src="/assets/images/portfolios/5.png" alt="" />
-                        </figure>
-                      </a>
-                    </li>
-                    <li className="widdth sizzze">
-                      <a data-fancybox="port" href="/assets/images/portfolios/8.png">
-                        <figure>
-                          <img className="widftttt" src="/assets/images/portfolios/8.png" alt="" />
-                        </figure>
-                      </a>
-                    </li>
-                    <li className="">
-                      <a data-fancybox="port" href="/assets/images/portfolios/3.png">
-                        <figure>
-                          <img className="heigtttt" src="/assets/images/portfolios/3.png" alt="" />
-                        </figure>
-                      </a>
-                    </li>
-                    <li>
-                      <a data-fancybox="port" href="/assets/images/portfolios/4.png">
-                        <figure>
-                          <img className="widftttt" src="/assets/images/portfolios/4.png" alt="" />
-                        </figure>
-                      </a>
-                    </li>
-                    <li>
-                      <a data-fancybox="port" href="/assets/images/portfolios/5.png">
-                        <figure>
-                          <img className="heigtttt" src="/assets/images/portfolios/5.png" alt="" />
-                        </figure>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <HomePortfolioSlider />
       </div>
       
       <PackageInclude />

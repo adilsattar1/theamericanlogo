@@ -22,7 +22,7 @@ export default function Page() {
             <div className="col-md-8">
               <div className="row ">
                 <div className="col-md-10">
-                  <div className="txtwrp" style={{ textAlign: "left" }}>
+                  <div className="txtwrp scrollable-large-content" style={{ textAlign: "left" }}>
                     <h2 className="main-heading">
                       Make Positive Impressions with <br />
                       <span>Unique Illustrations</span>
@@ -165,7 +165,7 @@ export default function Page() {
         <div className="container">
           <div className="row mrgn-btm">
             <div className="col-md-6">
-              <div className="txtwrp">
+              <div className="txtwrp scrollable-large-content">
                 <h4 className="upr-head">2D &amp; 3D Illustrations</h4>
                 <h2 className="main-heading">
                   TOP-NOTCH ILLUSTRATION <br />
