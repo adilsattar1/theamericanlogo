@@ -107,8 +107,8 @@ export default function Page() {
             <div className="col-md-6">
               <div className="txtwrp">
                 <h4 className="upr-head">Why 3D Logo Design Services</h4>
-                <h2 className="main-heading">A Reliable Logo Design Agency That Gives <span>Better Results for Your Business’s Success</span></h2>
-                <p className="main-pera wow fadeInUp" style={{visibility: 'visible', animationName: 'fadeInUp'}}>The basic reason to have logo is to hold a symbolic identity, which reflects your brand’s philosophy, should be eye-catching and must be remarkable. These are the common objectives that have always been endeavored to achieve in 2 dimension. However, with the evolution of technology.</p>
+                <h2 className="main-heading">A Reliable Logo Design Agency That Gives <span>Better Results for Your Business's Success</span></h2>
+                <p className="main-pera wow fadeInUp" style={{visibility: 'visible', animationName: 'fadeInUp'}}>The basic reason to have logo is to hold a symbolic identity, which reflects your brand's philosophy, should be eye-catching and must be remarkable. These are the common objectives that have always been endeavored to achieve in 2 dimension. However, with the evolution of technology.</p>
                 <br />
                 <div className="btnwrp">
                   <a className="btn-1 button_banner_quote mypop pulse-button" style={{cursor: 'pointer'}} href="/get-started">Let's Get Started</a>

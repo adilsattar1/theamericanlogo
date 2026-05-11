@@ -399,7 +399,7 @@ export default function Page() {
                               Methodology helps us to create operational software as soon as
                               possible and then simply add the additional features along the way.
                               As a result, you'll be able to examine and test your software much
-                              sooner. We call this a ‘prototype’.</h4>
+                              sooner. We call this a "prototype".</h4>
                           </div>
                         </div>
                       </div>

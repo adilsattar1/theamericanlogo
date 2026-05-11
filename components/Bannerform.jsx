@@ -6,7 +6,7 @@ export default function Bannerform() {
     <>
       <div className="col-md-4 my-auto">
         <div className="formwrp-11">
-          <h4>Let’s start a project together</h4>
+          <h4>Let's start a project together</h4>
           <h2>Ready to catch up on your application development?</h2>
           <LeadForm endpoint={API_ENDPOINTS.contact} buttonText="Connect With An Expert" />
           <div className="clrwrp">

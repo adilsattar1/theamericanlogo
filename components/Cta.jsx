@@ -15,8 +15,7 @@ export default function Cta() {
                   <div className="col-md-6 my-auto">
                     <div className="txtwrp">
                       <h4 className="wow fadeInUp">Sign up now and avail our amazing promotional discount.</h4>
-                      <p className="wow fadeInUp">We don’t do generic, templated design. 
-                        With The American Logo, you’ll get a bespoke website design that sets you apart from the competition.</p>
+                      <p className="wow fadeInUp">We don't do generic, templated design. With The American Logo, you'll get a bespoke website design that sets you apart from the competition.</p>
                     </div>
                     <div className="btnwrp">
                       <a className="btn-1" href="/get-started">Let's Get Started</a>

@@ -67,7 +67,7 @@ export default function Page() {
               <div className="txtwrp">
                 <h4 className="upr-head">Custom Animated Video</h4>
                 <h2 className="main-heading">Bring Your Brand to Life With Our<br /><span> Custom Animation Services!</span> </h2>
-                <p className="main-pera wow fadeInUp">Every brand needs a video or a logo that will set them apart from their competitors and represent what they are. With our dedicated team’s help, you can do that by showing your customer the ‘real thing.’ From motion graphics to 3D and 2D animation, we provide all kinds of custom animation services.</p>
+                <p className="main-pera wow fadeInUp">Every brand needs a video or a logo that will set them apart from their competitors and represent what they are. With our dedicated team's help, you can do that by showing your customer the "real thing." From motion graphics to 3D and 2D animation, we provide all kinds of custom animation services.</p>
                 <p className="main-pera wow fadeInUp">With your selection of characters, designs, and backgrounds, you can quickly deliver your message to your customers.</p>
                 <br />
                 <ul className="tks">

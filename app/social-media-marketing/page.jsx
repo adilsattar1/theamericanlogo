@@ -67,7 +67,7 @@ export default function Page() {
               <div className="txtwrp">
                 {/* <h4 class="upr-head wow fadeInUp">Illustration</h4> */}
                 <h2 className="main-heading wow fadeInUp">Communicate effectively with your audience through our Social Media Marketing services!</h2>
-                <p className="main-pera wow fadeInUp">At American Website Designers LLC, we provide Social Media Marketing to our clients to reach their audience more effectively. Social Media Marketing has different purposes for each of your audience segments; however, it’s more focused on supporting your sales and marketing efforts. Moreover, your brand can have better credibility with our help if you use our Social Media Marketing services.</p>
+                <p className="main-pera wow fadeInUp">At American Website Designers LLC, we provide Social Media Marketing to our clients to reach their audience more effectively. Social Media Marketing has different purposes for each of your audience segments; however, it's more focused on supporting your sales and marketing efforts. Moreover, your brand can have better credibility with our help if you use our Social Media Marketing services.</p>
                 <br />
                 <ul className="tks">
                   <li>

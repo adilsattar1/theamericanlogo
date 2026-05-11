@@ -23,7 +23,7 @@ export default function Page() {
                 <div className="col-md-10">
                   <div className="txtwrp" style={{textAlign: 'left'}}>					
                     <h2 className="main-heading">Let Customers Find Your <br /> <span>Business On Google</span></h2>
-                    <p className="main-pera">Turn web traffic into customers with strategic SEO services made custom for your business. Our team of experts guarantees to put you on top of Google’s search results for revenue-generating targeted keywords.</p>
+                    <p className="main-pera">Turn web traffic into customers with strategic SEO services made custom for your business. Our team of experts guarantees to put you on top of Google's search results for revenue-generating targeted keywords.</p>
                     <ul>
                       <li>Conversion Rate Optimization</li>
                       <li>Online Reputation Management</li>
@@ -67,7 +67,7 @@ export default function Page() {
               <div className="txtwrp">
                 <h4 className="upr-head wow">SEO SERVICES IN USA</h4>
                 <h2 className="main-heading">Get More Traffic Working With <br /> <span>Our Reliable SEO Services USA</span></h2>
-                <p className="main-pera wow fadeInUp">If you are looking for more traffic to your website, then it’s time to hire The American Logo. Our team consists of the content writers, link builders, and SEO consultants to deliver you the best results. We help you get a higher natural, organic ranking through both local and national SEO strategies. Our goal is to increase clients’ site traffic and improve conversion rates for profit growth.</p>
+                <p className="main-pera wow fadeInUp">If you are looking for more traffic to your website, then it's time to hire The American Logo. Our team consists of the content writers, link builders, and SEO consultants to deliver you the best results. We help you get a higher natural, organic ranking through both local and national SEO strategies. Our goal is to increase clients' site traffic and improve conversion rates for profit growth.</p>
                 <br />
                 <p className="main-pera wow fadeInUp">The American Logo designs the right SEO strategy for each client after having a thorough discussion and understanding the ultimate needs of the clients. We promise tailor-made solutions that help clients achieve their objectives in a limited time frame and according to their budget.</p>
                 <br />
@@ -108,9 +108,9 @@ export default function Page() {
           <div className="row mrgn-btm">
             <div className="col-md-6">
               <div className="txtwrp">
-                <h4 className="upr-head">Let’s Get You Ranked!</h4>
+                <h4 className="upr-head">Let's Get You Ranked!</h4>
                 <h2 className="main-heading">Grow Online Customers <br /> <span>And Increase Revenue</span></h2>
-                <p className="main-pera wow fadeInUp" style={{visibility: 'visible', animationName: 'fadeInUp'}}>No business in the world can flourish without customers. At The American Logo, our experts understand that and build a strategy that suits your goals. From getting more business inquiries, to increasing ecommerce website sales, our team of SEO professionals create a strategy that gets you exactly what you’re looking for – increase in revenue.</p>
+                <p className="main-pera wow fadeInUp" style={{visibility: 'visible', animationName: 'fadeInUp'}}>No business in the world can flourish without customers. At The American Logo, our experts understand that and build a strategy that suits your goals. From getting more business inquiries, to increasing ecommerce website sales, our team of SEO professionals create a strategy that gets you exactly what you're looking for - increase in revenue.</p>
                 <br />
                 <div className="btnwrp">
                   <a className="btn-1 button_banner_quote mypop pulse-button" style={{cursor: 'pointer'}} href="/get-started">Let's Get Started</a>
