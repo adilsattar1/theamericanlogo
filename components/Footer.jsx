@@ -11,6 +11,10 @@ export default function Footer() {
               <div className="logowrp">
                 <Image src="/assets/images/logo.png" alt="The American Logo" width={180} height={54} />
                 <p>We are a team of creative thinkers and problem solvers dedicated to helping brands achieve their goals.</p>
+                <div className="footer-contact-info">
+                  <p><i className="fa fa-phone" aria-hidden="true" /> <a href="tel:+1 (214) 531-3914">+1 (214) 531-3914</a></p>
+                  <p><i className="fa fa-map-marker" aria-hidden="true" /> 535 W Airport Fwy, Irving, TX 75062</p>
+                </div>
               </div>
             </div>
             <div className="col-md">

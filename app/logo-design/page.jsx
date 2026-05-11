@@ -1,4 +1,4 @@
-ï»¿import Bannerform from "../../components/Bannerform";
+import Bannerform from "../../components/Bannerform";
 import ClientLogos from "../../components/ClientLogos";
 import Rate from "../../components/Rate";
 import Port1 from "../../components/Port1";
@@ -48,7 +48,7 @@ export default function Page() {
             <Bannerform />
             <div className="btnwrp pding">
         <a className="btn-1" href="/get-started">Let's Get Started</a>
-        <a className="btn-2" href="tel:+1 (214) 531-3914"> <i className="fa fa-phone" aria-hidden="true" />+1 (682) 345-9960</a>
+        <a className="btn-2" href="tel:+1 (214) 531-3914"> <i className="fa fa-phone" aria-hidden="true" />+1 (214) 531-3914</a>
       </div>
           </div>
         </div>
@@ -90,7 +90,7 @@ export default function Page() {
               </div>
               <div className="btnwrp">
                 <a className="btn-1 button_banner_quote mypop pulse-button" style={{cursor: 'pointer'}} href="/get-started">Let's Get Started</a>
-                <a className="btn-2" href="tel:+1 (214) 531-3914">+1 (682) 345-9960</a>
+                <a className="btn-2" href="tel:+1 (214) 531-3914">+1 (214) 531-3914</a>
               </div>
             </div>
           </div>
@@ -107,12 +107,12 @@ export default function Page() {
             <div className="col-md-6">
               <div className="txtwrp">
                 <h4 className="upr-head">Why 3D Logo Design Services</h4>
-                <h2 className="main-heading">A Reliable Logo Design Agency That Gives <span>Better Results for Your Businessâ€™s Success</span></h2>
-                <p className="main-pera wow fadeInUp" style={{visibility: 'visible', animationName: 'fadeInUp'}}>The basic reason to have logo is to hold a symbolic identity, which reflects your brandâ€™s philosophy, should be eye-catching and must be remarkable. These are the common objectives that have always been endeavored to achieve in 2 dimension. However, with the evolution of technology.</p>
+                <h2 className="main-heading">A Reliable Logo Design Agency That Gives <span>Better Results for Your Business’s Success</span></h2>
+                <p className="main-pera wow fadeInUp" style={{visibility: 'visible', animationName: 'fadeInUp'}}>The basic reason to have logo is to hold a symbolic identity, which reflects your brand’s philosophy, should be eye-catching and must be remarkable. These are the common objectives that have always been endeavored to achieve in 2 dimension. However, with the evolution of technology.</p>
                 <br />
                 <div className="btnwrp">
                   <a className="btn-1 button_banner_quote mypop pulse-button" style={{cursor: 'pointer'}} href="/get-started">Let's Get Started</a>
-                  <a className="btn-2" href="tel:+1 (214) 531-3914">+1 (682) 345-9960</a>
+                  <a className="btn-2" href="tel:+1 (214) 531-3914">+1 (214) 531-3914</a>
                 </div>
               </div>
             </div>
@@ -130,4 +130,5 @@ export default function Page() {
       <BottomForm />    </>
   );
 }
+
 

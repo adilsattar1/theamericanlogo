@@ -1,4 +1,4 @@
-ï»¿import Link from "next/link";
+import Link from "next/link";
 import ClientLogos from "../components/ClientLogos";
 import HomePortfolioSlider from "../components/HomePortfolioSlider";
 import PackageInclude from "../components/PackageInclude";
@@ -93,8 +93,7 @@ export default function Page() {
               </div>
               <div className="btnwrp">
                 <Link href="/get-started" className="btn-1">Let's Get Started</Link>
-                <a className="btn-2" href="tel:+1 (214) 531-3914"> <i className="fa fa-phone" aria-hidden="true" />+1
-                  (682) 345-9960</a>
+                <a className="btn-2" href="tel:+1 (214) 531-3914"> <i className="fa fa-phone" aria-hidden="true" />+1 (214) 531-3914</a>
               </div>
             </div>
           </div>
@@ -122,8 +121,7 @@ export default function Page() {
                 </div>
                 <div className="btnwrp">
                   <Link href="/get-started" className="btn-1">Let's Get Started</Link>
-                  <a className="btn-2" href="tel:+1 (214) 531-3914"> <i className="fa fa-phone" aria-hidden="true" />+1
-                    (682) 345-9960</a>
+                  <a className="btn-2" href="tel:+1 (214) 531-3914"> <i className="fa fa-phone" aria-hidden="true" />+1 (214) 531-3914</a>
                 </div>
               </div>
             </div>
@@ -277,7 +275,7 @@ export default function Page() {
       {/*                            </div>*/}
       {/*                            <div class="package-off"> <span>Was $179.99</span> </div>*/}
       {/*                            <div class="detailwrp">*/}
-      {/*                                <a href="tel:+1 (214) 531-3914"><span>Call Us At</span> +1 (682) 345-9960</a>*/}
+      {/*                                <a href="tel:+1 (214) 531-3914"><span>Call Us At</span> +1 (214) 531-3914</a>*/}
       {/*                                <a class="btn-1" href="/get-started">Get Started</a>*/}
       {/*                            </div>*/}
       {/*                        </div>*/}
@@ -401,7 +399,7 @@ export default function Page() {
                               Methodology helps us to create operational software as soon as
                               possible and then simply add the additional features along the way.
                               As a result, you'll be able to examine and test your software much
-                              sooner. We call this a â€˜prototypeâ€™.</h4>
+                              sooner. We call this a ‘prototype’.</h4>
                           </div>
                         </div>
                       </div>
@@ -417,4 +415,5 @@ export default function Page() {
       <BottomForm />    </>
   );
 }
+
 

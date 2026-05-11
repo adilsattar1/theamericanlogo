@@ -1,4 +1,4 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 
 const serviceLinks = [
@@ -67,7 +67,7 @@ export default function Header() {
               <div className="btnwrp">
                 <ul>
                   <li><Link href="/get-started" className="btn-main">Let's Get Started</Link></li>
-                  <li><a href="tel:+1 (214) 531-3914"><i style={{ color: "#f07c69" }} className="fa fa-phone" aria-hidden="true" /> +1 (682) 345-9960</a></li>
+                  <li><a href="tel:+1 (214) 531-3914"><i style={{ color: "#f07c69" }} className="fa fa-phone" aria-hidden="true" /> +1 (214) 531-3914</a></li>
                 </ul>
               </div>
             </div>
@@ -77,4 +77,5 @@ export default function Header() {
     </>
   );
 }
+
 

@@ -1,4 +1,4 @@
-ï»¿import Bannerform from "../../components/Bannerform";
+import Bannerform from "../../components/Bannerform";
 import ClientLogos from "../../components/ClientLogos";
 import Rate from "../../components/Rate";
 import Port1 from "../../components/Port1";
@@ -48,7 +48,7 @@ export default function Page() {
             <Bannerform />
             <div className="btnwrp">
         <a className="btn-1" href="/get-started">Let's Get Started</a>
-        <a className="btn-2" href="tel:+1 (214) 531-3914"> <i className="fa fa-phone" aria-hidden="true" />+1 (682) 345-9960</a>
+        <a className="btn-2" href="tel:+1 (214) 531-3914"> <i className="fa fa-phone" aria-hidden="true" />+1 (214) 531-3914</a>
       </div>
           </div>
         </div>
@@ -67,7 +67,7 @@ export default function Page() {
               <div className="txtwrp">
                 <h4 className="upr-head">Custom Animated Video</h4>
                 <h2 className="main-heading">Bring Your Brand to Life With Our<br /><span> Custom Animation Services!</span> </h2>
-                <p className="main-pera wow fadeInUp">Every brand needs a video or a logo that will set them apart from their competitors and represent what they are. With our dedicated teamâ€™s help, you can do that by showing your customer the â€˜real thing.â€™ From motion graphics to 3D and 2D animation, we provide all kinds of custom animation services.</p>
+                <p className="main-pera wow fadeInUp">Every brand needs a video or a logo that will set them apart from their competitors and represent what they are. With our dedicated team’s help, you can do that by showing your customer the ‘real thing.’ From motion graphics to 3D and 2D animation, we provide all kinds of custom animation services.</p>
                 <p className="main-pera wow fadeInUp">With your selection of characters, designs, and backgrounds, you can quickly deliver your message to your customers.</p>
                 <br />
                 <ul className="tks">
@@ -91,7 +91,7 @@ export default function Page() {
               </div>
               <div className="btnwrp">
                 <a className="btn-1 button_banner_quote mypop pulse-button" style={{cursor: 'pointer'}} href="/get-started">Let's Get Started</a>
-                <a className="btn-2" href="tel:+1 (214) 531-3914">+1 (682) 345-9960</a>
+                <a className="btn-2" href="tel:+1 (214) 531-3914">+1 (214) 531-3914</a>
               </div>
             </div>
           </div>
@@ -113,7 +113,7 @@ export default function Page() {
                 <br />
                 <div className="btnwrp">
                   <a className="btn-1 button_banner_quote mypop pulse-button" style={{cursor: 'pointer'}} href="/get-started">Let's Get Started</a>
-                  <a className="btn-2" href="tel:+1 (214) 531-3914">+1 (682) 345-9960</a>
+                  <a className="btn-2" href="tel:+1 (214) 531-3914">+1 (214) 531-3914</a>
                 </div>
               </div>
             </div>	
@@ -131,4 +131,5 @@ export default function Page() {
       <BottomForm />    </>
   );
 }
+
 

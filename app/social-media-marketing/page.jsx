@@ -1,4 +1,4 @@
-﻿import Bannerform from "../../components/Bannerform";
+import Bannerform from "../../components/Bannerform";
 import ClientLogos from "../../components/ClientLogos";
 import Rate from "../../components/Rate";
 import Port1 from "../../components/Port1";
@@ -48,7 +48,7 @@ export default function Page() {
             <Bannerform />
             <div className="btnwrp">
         <a className="btn-1" href="/get-started">Let's Get Started</a>
-        <a className="btn-2" href="tel:+1 (214) 531-3914"> <i className="fa fa-phone" aria-hidden="true" />+1 (682) 345-9960</a>
+        <a className="btn-2" href="tel:+1 (214) 531-3914"> <i className="fa fa-phone" aria-hidden="true" />+1 (214) 531-3914</a>
       </div>
           </div>
         </div>
@@ -67,7 +67,7 @@ export default function Page() {
               <div className="txtwrp">
                 {/* <h4 class="upr-head wow fadeInUp">Illustration</h4> */}
                 <h2 className="main-heading wow fadeInUp">Communicate effectively with your audience through our Social Media Marketing services!</h2>
-                <p className="main-pera wow fadeInUp">At American Website Designers LLC, we provide Social Media Marketing to our clients to reach their audience more effectively. Social Media Marketing has different purposes for each of your audience segments; however, it’s more focused on supporting your sales and marketing efforts. Moreover, your brand can have better credibility with our help if you use our Social Media Marketing services.</p>
+                <p className="main-pera wow fadeInUp">At American Website Designers LLC, we provide Social Media Marketing to our clients to reach their audience more effectively. Social Media Marketing has different purposes for each of your audience segments; however, it�s more focused on supporting your sales and marketing efforts. Moreover, your brand can have better credibility with our help if you use our Social Media Marketing services.</p>
                 <br />
                 <ul className="tks">
                   <li>
@@ -90,7 +90,7 @@ export default function Page() {
               </div>
               <div className="btnwrp">
                 <a className="btn-1 button_banner_quote mypop pulse-button" style={{cursor: 'pointer'}} href="/get-started">Let's Get Started</a>
-                <a className="btn-2" href="tel:+1 (214) 531-3914">+1 (682) 345-9960</a>
+                <a className="btn-2" href="tel:+1 (214) 531-3914">+1 (214) 531-3914</a>
               </div>
             </div>
           </div>
@@ -111,7 +111,7 @@ export default function Page() {
                 <br />
                 <div className="btnwrp">
                   <a className="btn-1 button_banner_quote mypop pulse-button" style={{cursor: 'pointer'}} href="/get-started">Let's Get Started</a>
-                  <a className="btn-2" href="tel:+1 (214) 531-3914">+1 (682) 345-9960</a>
+                  <a className="btn-2" href="tel:+1 (214) 531-3914">+1 (214) 531-3914</a>
                 </div>
               </div>
             </div>	
@@ -129,4 +129,5 @@ export default function Page() {
       <BottomForm />    </>
   );
 }
+
 
