@@ -1,4 +1,4 @@
-import Bannerform from "../../components/Bannerform";
+﻿import Bannerform from "../../components/Bannerform";
 import ClientLogos from "../../components/ClientLogos";
 import Rate from "../../components/Rate";
 import Port1 from "../../components/Port1";
@@ -48,7 +48,7 @@ export default function Page() {
             <Bannerform />
             <div className="btnwrp pding">
         <a className="btn-1" href="/get-started">Let's Get Started</a>
-        <a className="btn-2" href="tel:+(682) 345-9960"> <i className="fa fa-phone" aria-hidden="true" />+1 (682) 345-9960</a>
+        <a className="btn-2" href="tel:+1 (214) 531-3914"> <i className="fa fa-phone" aria-hidden="true" />+1 (682) 345-9960</a>
       </div>
           </div>
         </div>
@@ -90,7 +90,7 @@ export default function Page() {
               </div>
               <div className="btnwrp">
                 <a className="btn-1 button_banner_quote mypop pulse-button" style={{cursor: 'pointer'}} href="/get-started">Let's Get Started</a>
-                <a className="btn-2" href="tel:+(682) 345-9960">+1 (682) 345-9960</a>
+                <a className="btn-2" href="tel:+1 (214) 531-3914">+1 (682) 345-9960</a>
               </div>
             </div>
           </div>
@@ -112,7 +112,7 @@ export default function Page() {
                 <br />
                 <div className="btnwrp">
                   <a className="btn-1 button_banner_quote mypop pulse-button" style={{cursor: 'pointer'}} href="/get-started">Let's Get Started</a>
-                  <a className="btn-2" href="tel:+(682) 345-9960">+1 (682) 345-9960</a>
+                  <a className="btn-2" href="tel:+1 (214) 531-3914">+1 (682) 345-9960</a>
                 </div>
               </div>
             </div>
@@ -130,3 +130,4 @@ export default function Page() {
       <BottomForm />    </>
   );
 }
+

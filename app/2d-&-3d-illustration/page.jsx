@@ -1,4 +1,4 @@
-import Bannerform from "../../components/Bannerform";
+﻿import Bannerform from "../../components/Bannerform";
 import ClientLogos from "../../components/ClientLogos";
 import Rate from "../../components/Rate";
 import Port1 from "../../components/Port1";
@@ -76,7 +76,7 @@ export default function Page() {
               <a className="btn-1" href="/get-started">
                 Let's Get Started
               </a>
-              <a className="btn-2" href="tel:+(682) 345-9960">
+              <a className="btn-2" href="tel:+1 (214) 531-3914">
                 {" "}
                 <i className="fa fa-phone" aria-hidden="true" />
                 +1 (682) 345-9960
@@ -149,7 +149,7 @@ export default function Page() {
                 >
                   Let's Get Started
                 </a>
-                <a className="btn-2" href="tel:+(682) 345-9960">
+                <a className="btn-2" href="tel:+1 (214) 531-3914">
                   +1 (682) 345-9960
                 </a>
               </div>
@@ -206,7 +206,7 @@ export default function Page() {
                   >
                     Let's Get Started
                   </a>
-                  <a className="btn-2" href="tel:+(682) 345-9960">
+                  <a className="btn-2" href="tel:+1 (214) 531-3914">
                     +1 (682) 345-9960
                   </a>
                 </div>
@@ -232,3 +232,4 @@ export default function Page() {
     </>
   );
 }
+

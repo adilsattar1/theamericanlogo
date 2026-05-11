@@ -1,4 +1,4 @@
-export default function Cta() {
+﻿export default function Cta() {
   return (
     <>
       <section className="cta-wrp">
@@ -20,7 +20,7 @@ export default function Cta() {
                     </div>
                     <div className="btnwrp">
                       <a className="btn-1" href="/get-started">Let's Get Started</a>
-                      <a className="btn-2" href="tel:+(682) 345-9960"> <i className="fa fa-phone" aria-hidden="true" />+1 (682) 345-9960</a>
+                      <a className="btn-2" href="tel:+1 (214) 531-3914"> <i className="fa fa-phone" aria-hidden="true" />+1 (682) 345-9960</a>
                     </div>            
                   </div>
                 </div>
@@ -33,3 +33,4 @@ export default function Cta() {
     </>
   );
 }
+

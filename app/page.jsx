@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import ClientLogos from "../components/ClientLogos";
 import HomePortfolioSlider from "../components/HomePortfolioSlider";
 import PackageInclude from "../components/PackageInclude";
@@ -88,12 +88,12 @@ export default function Page() {
               </div>
               <div className="txtwrp">
                 <h1>100% Original<br /><span>&amp; Creative Logo Designs</span></h1>
-                <p>At American Logo Nations, our team specializes in developing custom strategies, including
+                <p>At The American Logo, our team specializes in developing custom strategies, including
                   distinctive logo design, to establish and grow your brand</p>
               </div>
               <div className="btnwrp">
                 <Link href="/get-started" className="btn-1">Let's Get Started</Link>
-                <a className="btn-2" href="tel:+(682) 345-9960"> <i className="fa fa-phone" aria-hidden="true" />+1
+                <a className="btn-2" href="tel:+1 (214) 531-3914"> <i className="fa fa-phone" aria-hidden="true" />+1
                   (682) 345-9960</a>
               </div>
             </div>
@@ -122,7 +122,7 @@ export default function Page() {
                 </div>
                 <div className="btnwrp">
                   <Link href="/get-started" className="btn-1">Let's Get Started</Link>
-                  <a className="btn-2" href="tel:+(682) 345-9960"> <i className="fa fa-phone" aria-hidden="true" />+1
+                  <a className="btn-2" href="tel:+1 (214) 531-3914"> <i className="fa fa-phone" aria-hidden="true" />+1
                     (682) 345-9960</a>
                 </div>
               </div>
@@ -277,7 +277,7 @@ export default function Page() {
       {/*                            </div>*/}
       {/*                            <div class="package-off"> <span>Was $179.99</span> </div>*/}
       {/*                            <div class="detailwrp">*/}
-      {/*                                <a href="tel:+(682) 345-9960"><span>Call Us At</span> +1 (682) 345-9960</a>*/}
+      {/*                                <a href="tel:+1 (214) 531-3914"><span>Call Us At</span> +1 (682) 345-9960</a>*/}
       {/*                                <a class="btn-1" href="/get-started">Get Started</a>*/}
       {/*                            </div>*/}
       {/*                        </div>*/}
@@ -417,3 +417,4 @@ export default function Page() {
       <BottomForm />    </>
   );
 }
+

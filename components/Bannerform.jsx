@@ -1,4 +1,4 @@
-import LeadForm from "./forms/LeadForm";
+﻿import LeadForm from "./forms/LeadForm";
 import { API_ENDPOINTS } from "../lib/api";
 
 export default function Bannerform() {
@@ -11,7 +11,7 @@ export default function Bannerform() {
           <LeadForm endpoint={API_ENDPOINTS.contact} buttonText="Connect With An Expert" />
           <div className="clrwrp">
             <a href="/contact-us"><i className="fa fa-user-plus" aria-hidden="true" />Speak With Our Expert</a>
-            <a className="bnr-a" href="tel:+(682)345-9960">Call Now <span>+1 (682) 345-9960 </span></a>
+            <a className="bnr-a" href="tel:+1 (214) 531-3914">Call Now <span>+1 (682) 345-9960 </span></a>
           </div>
         </div>
       </div>
@@ -19,3 +19,4 @@ export default function Bannerform() {
     </>
   );
 }
+

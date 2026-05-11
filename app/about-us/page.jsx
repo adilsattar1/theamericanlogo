@@ -1,4 +1,4 @@
-import ClientLogos from "../../components/ClientLogos";
+﻿import ClientLogos from "../../components/ClientLogos";
 import Cta from "../../components/Cta";
 import Testimonials from "../../components/Testimonials";
 import BottomForm from "../../components/BottomForm";
@@ -38,7 +38,7 @@ export default function Page() {
                 </div>
                 <div className="btnwrp">
                   <a className="btn-1" href="/get-started">Let's Get Started</a>
-                  <a className="btn-2" href="tel:+(682) 345-9960"> <i className="fa fa-phone" aria-hidden="true" />+1 (682) 345-9960</a>
+                  <a className="btn-2" href="tel:+1 (214) 531-3914"> <i className="fa fa-phone" aria-hidden="true" />+1 (682) 345-9960</a>
                 </div>
               </div>
               <div className="col-md-6">
@@ -86,7 +86,7 @@ export default function Page() {
                 </div>
                 <div className="btnwrp">
                   <a className="btn-1" href="/get-started">Let's Get Started</a>
-                  <a className="btn-2" href="tel:+(682) 345-9960"> <i className="fa fa-phone" aria-hidden="true" />+1 (682) 345-9960</a>
+                  <a className="btn-2" href="tel:+1 (214) 531-3914"> <i className="fa fa-phone" aria-hidden="true" />+1 (682) 345-9960</a>
                 </div>
               </div>
             </div>
@@ -99,3 +99,4 @@ export default function Page() {
       <BottomForm />    </>
   );
 }
+

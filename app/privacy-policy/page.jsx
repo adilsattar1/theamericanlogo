@@ -1,4 +1,4 @@
-
+﻿
 export const metadata = {
   title: "Privacy Policy",
   description: "The American Logo",
@@ -65,7 +65,7 @@ export default function Page() {
                 <h4 className="upr-head">Contact Information:</h4>
                 <div className="clearfix">
                   <div className="phone"><i className="fa fa-phone" aria-hidden="true" />
-                    <p><a className="num" href="tel:+(682) 345-9960"> Call +1 (682) 345-9960</a></p>
+                    <p><a className="num" href="tel:+1 (214) 531-3914"> Call +1 (682) 345-9960</a></p>
                   </div>
                   <div className="mail"><i className="fa fa-envelope-o" aria-hidden="true" /><a className="email" href="mailto:info@theamericanlogo.com">info@theamericanlogo.com</a></div>
                 </div>
@@ -75,3 +75,4 @@ export default function Page() {
       </div>    </>
   );
 }
+
