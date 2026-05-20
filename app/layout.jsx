@@ -1,3 +1,4 @@
+import Script from "next/script";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "./globals.css";
@@ -31,8 +32,19 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;500;700;900&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+        <meta name="google-site-verification" content="9I7S-kMkmIw7ZXQI7qh3piLSH8SHRddYABCKvRhnZOg" />
       </head>
       <body suppressHydrationWarning>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-BCWQTY29JQ"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-BCWQTY29JQ');`}
+        </Script>
         <Header />
         <main className="app-container">{children}</main>
         <Footer />
